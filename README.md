@@ -4,11 +4,11 @@ asrock deskmini 110 hackintosh
 DeskMini 110 (case+motherboard+PSU)
 
 #### Hardware:
-* [Intel i5-6400](https://ark.intel.com/products/88185/Intel-Core-i5-6400-Processor-6M-Cache-up-to-3-30-GHz-)
-* Intel HD Graphics 530
-* BCM94350ZAE/DW1820A
+* [Intel® i5-6400 Skylake](https://ark.intel.com/products/88185/Intel-Core-i5-6400-Processor-6M-Cache-up-to-3-30-GHz-)
+* Intel® HD Graphics 530
+* [BCM94350ZAE/DW1820A](https://www.tonymacx86.com/threads/bcm94350zae-dw1820a-only-802-11n-wifi-and-no-bluetooth-devices.250592/page-4)
 * 240GB SSD
-* DDR4 8G x 2
+* DDR4 8G RAM x 2
 * macOS High Sierra 10.14.3
 * Clover+MultiBeast+Unibeast
 
