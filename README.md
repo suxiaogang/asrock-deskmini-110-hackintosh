@@ -4,11 +4,11 @@ asrock deskmini 110 hackintosh
 DeskMini 110 (case+motherboard+PSU)
 
 #### Hardware:
-  Intel i5-7500
-  Intel HD Graphics 630
-  BCM94352Z
-  macOS 10.12.6
-  Clover+MultiBeast+Unibeast
+⋅⋅* Intel i5-7500
+⋅⋅* Intel HD Graphics 630
+⋅⋅* BCM94352Z
+⋅⋅* macOS 10.12.6
+⋅⋅* Clover+MultiBeast+Unibeast
 
 #### Not working:
 
