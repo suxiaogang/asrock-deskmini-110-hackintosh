@@ -4,30 +4,31 @@ asrock deskmini 110 hackintosh
 DeskMini 110 (case+motherboard+PSU)
 
 #### Hardware:
-* Intel i5-7500
-* Intel HD Graphics 630
-* BCM94352Z
-* macOS 10.12.6
+* Intel i5-6400
+* Intel HD Graphics 530
+* BCM94350ZAE/DW1820A
+* 240GB SSD
+* DDR4 8G x 2
+* macOS High Sierra 10.14.3
 * Clover+MultiBeast+Unibeast
 
 #### Not working:
-
-HDMI audio (this should work, I'll try a vanilla install later)
-
+Bluetooth
 Sleep/wake
 
 #### Working:
-
-Graphics acceleration
+Graphics acceleration (4K 60Hz)
+Audio
 WiFi
-Bluetooth
 Analog audio
-USB only speakers
-#### Not tested yet:
+USB 2.0 & 3.0
 
+#### Not tested yet:
     Handoff
     Continuity
 
+
+#### Fix HD530 glitches
 https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.206410
 ```
 <key>Devices</key>
