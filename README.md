@@ -13,6 +13,8 @@
 * Bluetooth
 * Sleep/wake
 
+Bluetooth device show up in USB ports but not working
+
 #### Working:
 * Graphics acceleration (4K 60Hz)
 * Audio
