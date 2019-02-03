@@ -4,7 +4,7 @@ asrock deskmini 110 hackintosh
 DeskMini 110 (case+motherboard+PSU)
 
 #### Hardware:
-* Intel i5-6400
+* [Intel i5-6400](https://ark.intel.com/products/88185/Intel-Core-i5-6400-Processor-6M-Cache-up-to-3-30-GHz-)
 * Intel HD Graphics 530
 * BCM94350ZAE/DW1820A
 * 240GB SSD
