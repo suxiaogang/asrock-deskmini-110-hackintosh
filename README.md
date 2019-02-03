@@ -1,7 +1,4 @@
 # asrock-deskmini-110-hackintosh
-asrock deskmini 110 hackintosh
-
-DeskMini 110 (case+motherboard+PSU)
 
 #### Hardware:
 * [Intel® i5-6400 Skylake](https://ark.intel.com/products/88185/Intel-Core-i5-6400-Processor-6M-Cache-up-to-3-30-GHz-)
@@ -13,20 +10,19 @@ DeskMini 110 (case+motherboard+PSU)
 * Clover+MultiBeast+Unibeast
 
 #### Not working:
-Bluetooth
-Sleep/wake
+* Bluetooth
+* Sleep/wake
 
 #### Working:
-Graphics acceleration (4K 60Hz)
-Audio
-WiFi
-Analog audio
-USB 2.0 & 3.0
+* Graphics acceleration (4K 60Hz)
+* Audio
+* WiFi
+* Analog audio
+* USB 2.0 & 3.0
 
 #### Not tested yet:
-    Handoff
-    Continuity
-
+* Handoff
+* Continuity
 
 #### Fix HD530 glitches
 https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.206410
