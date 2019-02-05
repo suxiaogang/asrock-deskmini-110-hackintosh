@@ -9,6 +9,8 @@
 * macOS High Sierra 10.14.3
 * Clover+MultiBeast+Unibeast
 
+!(https://raw.githubusercontent.com/suxiaogang/asrock-deskmini-110-hackintosh/master/desktop.jpg)
+
 #### Not working:
 * Bluetooth
 * Sleep/wake
