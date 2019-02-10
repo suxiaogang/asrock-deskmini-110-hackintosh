@@ -26,6 +26,8 @@
 * Handoff
 * Continuity
 
+
+#### rebuild cache
 ```
 sudo chmod -R 755 /Library/Extensions
 sudo chown -R root:wheel /Library/Extensions
@@ -33,7 +35,9 @@ sudo chmod -R 755 /System/Library/Extensions
 sudo chown -R root:wheel /System/Library/Extensions
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
+
 #### Fix HD530 glitches
+https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.206410
 ```
 <dict>
     <key>Broadcom</key>
@@ -53,7 +57,6 @@ sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
 
 #### DW1820A inject
-https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.206410
 ```
 <key>Devices</key>
 <dict>
