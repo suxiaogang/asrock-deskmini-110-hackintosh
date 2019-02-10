@@ -33,8 +33,26 @@ sudo chmod -R 755 /System/Library/Extensions
 sudo chown -R root:wheel /System/Library/Extensions
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
-
 #### Fix HD530 glitches
+```
+<dict>
+    <key>Broadcom</key>
+    <dict>
+            <key>CFBundleIdentifier</key>
+            <string>com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport</string>
+            <key>IOClass</key>
+            <string>BroadcomBluetoothHostControllerUSBTransport</string>
+            <key>IOProviderClass</key>
+            <string>IOUSBHostDevice</string>
+            <key>idProduct</key>
+            <integer>25618</integer>
+            <key>idVendor</key>
+            <integer>2652</integer>
+    </dict>
+</dict>    
+```
+
+#### DW1820A inject
 https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.206410
 ```
 <key>Devices</key>
