@@ -299,7 +299,7 @@
 		<key>CustomLogo</key>
 		<string>Apple</string>
 		<key>DefaultVolume</key>
-		<string>Hackintosh</string>
+		<string>MacOS</string>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
 		<key>Log</key>
@@ -311,7 +311,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>3</integer>
+		<integer>5</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -423,13 +423,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>Hide</key>
-		<array>
-			<string>Preboot</string>
-			<string>Recovery</string>
-		</array>
-		<key>Language</key>
-		<string>en:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
