@@ -11,22 +11,28 @@
 
 ![screenshot](https://raw.githubusercontent.com/suxiaogang/asrock-deskmini-110-hackintosh/master/desktop.jpg)
 
-#### Not working:
-* Bluetooth
-* Sleep/wake
-
-Bluetooth device show up in USB ports but not working
-
 #### Working:
-* Graphics acceleration (4K 60Hz)
-* Audio
-* WiFi
-* Analog audio
-* USB 2.0 & 3.0
+* ✅ Graphics acceleration (4K 60Hz)
+* ✅ Audio
+* ✅ WiFi
+* ✅ Audio
+* ✅ Bluetooth
+* ✅ USB 2.0 & 3.0
+
+#### Not working:
+* sleep/wake (which in fact I don't care)
 
 #### Not tested yet:
 * Handoff
 * Continuity
+
+```
+sudo chmod -R 755 /Library/Extensions
+sudo chown -R root:wheel /Library/Extensions
+sudo chmod -R 755 /System/Library/Extensions
+sudo chown -R root:wheel /System/Library/Extensions
+sudo touch /System/Library/Extensions && sudo kextcache -u /
+```
 
 #### Fix HD530 glitches
 https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.206410
