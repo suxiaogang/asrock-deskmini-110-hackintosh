@@ -4,7 +4,7 @@
 * [Intel® i5-6500 Skylake](https://ark.intel.com/content/www/us/en/ark/products/88184/intel-core-i5-6500-processor-6m-cache-up-to-3-60-ghz.html)
 * Intel® HD Graphics 530
 * [BCM94350ZAE/DW1820A](https://www.tonymacx86.com/threads/bcm94350zae-dw1820a-only-802-11n-wifi-and-no-bluetooth-devices.250592/page-4)
-* 240GB SSD
+* 256 SSD (M.2 NVMe SSD)
 * DDR4 8G RAM x 2
 * macOS High Sierra 10.14.3
 * Clover+MultiBeast+Unibeast
