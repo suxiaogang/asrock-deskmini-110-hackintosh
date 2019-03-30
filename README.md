@@ -1,7 +1,7 @@
 # asrock-deskmini-110-hackintosh
 
 #### Hardware:
-* [Intel® i5-6400 Skylake](https://ark.intel.com/products/88185/Intel-Core-i5-6400-Processor-6M-Cache-up-to-3-30-GHz-)
+* [Intel® i5-6500 Skylake](https://ark.intel.com/content/www/us/en/ark/products/88184/intel-core-i5-6500-processor-6m-cache-up-to-3-60-ghz.html)
 * Intel® HD Graphics 530
 * [BCM94350ZAE/DW1820A](https://www.tonymacx86.com/threads/bcm94350zae-dw1820a-only-802-11n-wifi-and-no-bluetooth-devices.250592/page-4)
 * 240GB SSD
@@ -10,6 +10,7 @@
 * Clover+MultiBeast+Unibeast
 
 ![screenshot](https://raw.githubusercontent.com/suxiaogang/asrock-deskmini-110-hackintosh/master/desktop.jpg)
+![screenshot](https://raw.githubusercontent.com/suxiaogang/asrock-deskmini-110-hackintosh/master/4k.jpg)
 
 #### Working:
 * ✅ Graphics acceleration (4K 60Hz)
