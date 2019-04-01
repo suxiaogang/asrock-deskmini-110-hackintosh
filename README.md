@@ -78,3 +78,12 @@ https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.2064
     </array>
 </dict>
 ```
+#### 修复声卡杂音 (这个居然在某个baidu知道答案下面给解决了)
+![screenshot](https://raw.githubusercontent.com/suxiaogang/asrock-deskmini-110-hackintosh/master/audio.jpg)
+
+#### change device name 
+```
+sudo scutil --set ComputerName "newname"
+sudo scutil --set LocalHostName "newname"
+sudo scutil --set HostName "newname"
+```
