@@ -337,16 +337,6 @@
 				</data>
 			</dict>
 			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Key</key>
-				<string>AAPL,GfxYTile</string>
-				<key>Value</key>
-				<data>
-				AQAAAA==
-				</data>
-			</dict>
-			<dict>
 				<key>Comment</key>
 				<string>hda-gfx=onboard-1 for HDMI audio</string>
 				<key>Device</key>
@@ -423,18 +413,19 @@
 				</dict>
 			</array>
 		</dict>
+		<key>CustomIcons</key>
+		<false/>
 		<key>Hide</key>
 		<array>
-			<string>Preboot</string>
+			<string>Recovery HD</string>
 			<string>Recovery</string>
+			<string>Preboot</string>
+			<string>FileVault</string>
+			<string>macos install</string>
+			<string>MacOS Install</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
-		<key>Mouse</key>
-		<dict>
-			<key>Enabled</key>
-			<false/>
-		</dict>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
@@ -442,10 +433,12 @@
 			<key>Legacy</key>
 			<true/>
 			<key>Linux</key>
-			<true/>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
+		<key>ScreenResolution</key>
+		<string>1920x1080</string>
 		<key>Theme</key>
 		<string>Hackintosh_ID</string>
 	</dict>

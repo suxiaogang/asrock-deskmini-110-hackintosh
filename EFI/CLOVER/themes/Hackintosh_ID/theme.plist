@@ -74,15 +74,13 @@
 			<integer>128</integer>
 			<key>TileYSpace</key>
 			<integer>128</integer>
-			<key>Vertical</key>
-			<false/>
 		</dict>
 		<key>Origination</key>
 		<dict>
 			<key>DesignHeight</key>
-			<integer>800</integer>
+			<integer>1080</integer>
 			<key>DesignWidth</key>
-			<integer>1280</integer>
+			<integer>1920</integer>
 		</dict>
 		<key>Selection</key>
 		<dict>
