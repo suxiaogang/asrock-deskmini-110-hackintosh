@@ -29,7 +29,6 @@
 * Handoff
 * Continuity
 
-
 #### rebuild cache
 ```
 sudo chmod -R 755 /Library/Extensions
@@ -59,6 +58,18 @@ https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.2064
 </dict>    
 ```
 
+#### 远景论坛关于BCM94350ZAE/DW1820A
+```
+本人更换了无线网卡DW1820A(BCM94350ZAE)，屏蔽针脚之后wifi免驱，蓝牙放入BrcmFirmwareRepo.kext、BrcmPatchRAM2.kext这两个驱动后也可正常驱动，能搜索到设备，能正常发送接收文件。
+http://bbs.pcbeta.com/viewthread-1762096-1-1.html
+
+关于DW1820A蓝牙连接问题解决方法，其它应该也可以。
+http://bbs.pcbeta.com/viewthread-1802647-1-1.html
+
+
+https://bitbucket.org/RehabMan/os-x-brcmpatchram/overview
+```
+
 #### DW1820A inject
 ```
 <key>Devices</key>
@@ -78,7 +89,12 @@ https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.2064
     </array>
 </dict>
 ```
-#### 修复声卡杂音 (这个居然在某个baidu知道答案下面给解决了)
+#### 修复声卡杂音
+摘自远景论坛: 之前的CLOVER文件，声卡能正常驱动，不过耳机会杂音（之前没发觉到），可在clover的kexts文件夹里放入CodecCommander.kext驱动，并重建缓存，即可解决杂音问题。
+或者也可注入其他layoutID，一样可以解决耳机杂音问题，不过麦克风会有点问题。或者调节左右声道也可以解决。不过还是推荐第一种。
+
+https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/
+
 ![screenshot](https://raw.githubusercontent.com/suxiaogang/asrock-deskmini-110-hackintosh/master/audio.jpg)
 
 #### change device name 
