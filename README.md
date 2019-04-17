@@ -103,3 +103,12 @@ sudo scutil --set ComputerName "newname"
 sudo scutil --set LocalHostName "newname"
 sudo scutil --set HostName "newname"
 ```
+
+
+#### change about this mac section
+```
+/Applications/Utilities/System Information.app/Contents/Resources/SystemLogo.tiff
+```
+
+Clover Themes
+https://sourceforge.net/p/cloverefiboot/themes/ci/master/tree/themes
