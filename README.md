@@ -3,7 +3,7 @@
 #### Hardware:
 * [Intel® i5-6500 Skylake](https://ark.intel.com/content/www/us/en/ark/products/88184/intel-core-i5-6500-processor-6m-cache-up-to-3-60-ghz.html)
 * Intel® HD Graphics 530
-* [BCM94350ZAE/DW1820A](https://www.tonymacx86.com/threads/bcm94350zae-dw1820a-only-802-11n-wifi-and-no-bluetooth-devices.250592/page-4)
+* [BCM94350ZAE/DW1820A](https://www.tonymacx86.com/threads/bcm94350zae-dw1820a-only-802-11n-wifi-and-no-bluetooth-devices.250592)
 * 256 SSD (M.2 NVMe SSD)
 * DDR4 16G RAM (8Gb x 2)
 * macOS High Sierra 10.13.6
@@ -17,12 +17,14 @@
 #### Working:
 * ✅ Graphics acceleration (4K 60Hz)
 * ✅ Audio
-* ✅ WiFi
-* ✅ Audio
-* ✅ Bluetooth
+* ✅ WiFi (2.4G & 5G) / Ethernet
 * ✅ USB 2.0 & 3.0
 
+#### Not Perfect:
+* Audio
+
 #### Not working:
+* Bluetooth
 * sleep/wake (which in fact I don't care)
 
 #### Not tested yet:
