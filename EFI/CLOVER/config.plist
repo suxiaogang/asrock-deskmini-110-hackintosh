@@ -299,7 +299,7 @@
 		<key>CustomLogo</key>
 		<string>Apple</string>
 		<key>DefaultVolume</key>
-		<string>Hackintosh</string>
+		<string>HackintoshHD</string>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
 		<key>Log</key>
@@ -311,7 +311,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>3</integer>
+		<integer>2</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -375,6 +375,8 @@
 			<key>#Kaby Lake-Comment</key>
 			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
 		</dict>
+		<key>HDMIInjection</key>
+		<true/>
 		<key>SetIntelMaxBacklight</key>
 		<false/>
 		<key>USB</key>
@@ -413,16 +415,12 @@
 				</dict>
 			</array>
 		</dict>
-		<key>CustomIcons</key>
-		<false/>
 		<key>Hide</key>
 		<array>
 			<string>Recovery HD</string>
 			<string>Recovery</string>
 			<string>Preboot</string>
 			<string>FileVault</string>
-			<string>macos install</string>
-			<string>MacOS Install</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
@@ -497,7 +495,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Release kernel</string>
+				<string>Disable panic kext logging on Release kernel</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -513,7 +511,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 Release kernel (c) vit9696</string>
+				<string>Disable panic kext logging on Release kernel</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -521,10 +519,26 @@
 				igKEwHRC
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.x</string>
+				<string>10.14,10.14.1,10.14.2,10.14.3</string>
 				<key>Replace</key>
 				<data>
 				igKEwOtC
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on Release kernel</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AIoChMB0
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.4,10.14.5</string>
+				<key>Replace</key>
+				<data>
+				AIoChMDr
 				</data>
 			</dict>
 			<dict>
@@ -544,6 +558,160 @@
 		</array>
 		<key>KextsToPatch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>DVMT for AppleIntelBDWGraphicsFramebuffer (Credits DalianSky) for 10.14.x</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dkBI/wU=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>AppleIntelBDWGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				60BI/wU=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DVMT for AppleIntelSKLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.14.x</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dkBI/wU=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				60BI/wU=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DVMT for AppleIntelKBLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.14.x</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dkZI/wU=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>AppleIntelKBLGraph﻿icsFramebuffer﻿﻿﻿</string>
+				<key>Replace</key>
+				<data>
+				60ZI/wU=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.14.x</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dkBI/wU=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>AppleIntelCFLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				60BI/wU=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.14.x</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dkZI/wU=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>AppleIntelCFLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				60ZI/wU=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable AppleIntelLpssI2C (credit by Coolstar)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelLpssI2C</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable AppleIntelLpssI2CCOntroller (credit by Coolstar)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelLpssI2CController</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>disable IOBufferCopyController (Credit by DalianSky)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>IOBufferCopyController</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>10.13.x USB Port Limit Patch</string>
@@ -606,60 +774,102 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port limit patch 10.14.1 18B50C (credits DalianSky)</string>
+				<string>USB port limit patch #1 10.14.x modify by DalianSky(credit ydeng)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g/sPD4OPBAAA
+				g/sPDw==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.14.1,10.14.2</string>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g/s/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB port limit patch #2 10.14.x modify by DalianSky(credit PMHeart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g+MP0w==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g+M/0w==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch #3 10.14.x modify by DalianSky(credits PMheart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPDw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14,10.14.1,10.14.2,10.14.3</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				g/sPkJCQkJCQ
+				g/s/Dw==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>disable IOBufferCopyController (Credit by DalianSky)</string>
+				<string>USB Port limit patch #4 10.14.x modify by DalianSky(credits PMheart)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				SU9LaXQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>IOBufferCopyController</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.12-SKL-1912000-4_displays</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AQMDAwAAIAI=
+				g/8PDw==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.12.x</string>
+				<string>10.14.x</string>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				AQMEAwAAIAI=
+				g/8/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AppleRTC for 10.14.4</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dTMPtw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleRTC</string>
+				<key>Replace</key>
+				<data>
+				6zMPtw==
 				</data>
 			</dict>
 		</array>
@@ -673,14 +883,10 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosVersion</key>
-		<string>IM142.88Z.0123.B00.1708211454</string>
-		<key>BoardSerialNumber</key>
-		<string>C02814403GUJH4RJA</string>
 		<key>ProductName</key>
-		<string>MacBookPro15,2</string>
-		<key>SerialNumber</key>
-		<string>C02WJ3ZSJHCD</string>
+		<string>Macmini8,1</string>
+		<key>ProductName-Comment</key>
+		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
 		<key>Trust</key>
 		<false/>
 	</dict>
@@ -689,7 +895,7 @@
 		<key>#BacklightLevel</key>
 		<integer>0</integer>
 		<key>CustomUUID</key>
-		<string>55ADE930-5FDF-5EC4-8429-15640684C489</string>
+		<string>798284C3-7AA3-43F5-9512-F4388FF950B1</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
