@@ -17,6 +17,7 @@
 * ✅ Graphics acceleration (4K 60Hz and I'm using 1920*1080 HiDPi)
 * ✅ Audio
 * ✅ WiFi (2.4G & 5G) / Ethernet
+* ✅ Bluetooth
 * ✅ USB 2.0 & 3.0
 * ✅ iCloud
 
@@ -24,7 +25,6 @@
 * Audio
 
 #### Not working:
-* Bluetooth
 * sleep/wake (which in fact I don't care)
 
 #### Not tested yet:
@@ -60,37 +60,14 @@ https://www.tonymacx86.com/threads/skylake-intel-hd-530-graphics-glitch-fix.2064
 </dict>    
 ```
 
-#### 远景论坛关于BCM94350ZAE/DW1820A
+#### DW1820A/BCM94350ZAE/BCM94356ZEPA50DX插入的正确姿势
 ```
-本人更换了无线网卡DW1820A(BCM94350ZAE)，屏蔽针脚之后wifi免驱，蓝牙放入BrcmFirmwareRepo.kext、BrcmPatchRAM2.kext这两个驱动后也可正常驱动，能搜索到设备，能正常发送接收文件。
-http://bbs.pcbeta.com/viewthread-1762096-1-1.html
+DW1820A/BCM94350ZAE/BCM94356ZEPA50DX插入的正确姿势
+https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html
 
-关于DW1820A蓝牙连接问题解决方法，其它应该也可以。
-http://bbs.pcbeta.com/viewthread-1802647-1-1.html
-
-
-https://bitbucket.org/RehabMan/os-x-brcmpatchram/overview
+将【DW1820A蓝牙专用程序】 解压缩到/EFI/CLOVER/kexts/Other目录下，重启即可。
 ```
 
-#### DW1820A inject
-```
-<key>Devices</key>
-<dict>
-    <key>AddProperties</key>
-    <array>
-        <dict>
-            <key>Device</key>
-            <string>IntelGFX</string>
-            <key>Key</key>
-            <string>AAPL,GfxYTile</string>
-            <key>Value</key>
-            <data>
-            AQAAAA==
-            </data>
-        </dict>
-    </array>
-</dict>
-```
 #### 修复声卡杂音
 摘自远景论坛: 之前的CLOVER文件，声卡能正常驱动，不过耳机会杂音（之前没发觉到），可在clover的kexts文件夹里放入CodecCommander.kext驱动，并重建缓存，即可解决杂音问题。
 或者也可注入其他layoutID，一样可以解决耳机杂音问题，不过麦克风会有点问题。或者调节左右声道也可以解决。不过还是推荐第一种。
